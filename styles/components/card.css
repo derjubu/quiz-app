@@ -31,6 +31,10 @@
   cursor: pointer;
 }
 
+.card__answer--hidden {
+  display: none;
+}
+
 .card__tag-list {
   list-style: none;
   display: flex;
