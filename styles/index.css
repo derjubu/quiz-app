@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7f7f7;
+  padding: 1rem 0.5rem;
+  color: #0d0d0d;
+}
+
+/*Utilities*/
+
+.m-neg8 {
+  margin-left: -8px;
+}
+
+/*Components*/
+
+.navigation {
+  z-index: 10;
+  position: fixed;
+  bottom: 0px;
+  background-color: #55d6be;
+  width: 100%;
+  max-width: 640px;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.navigation > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.navigation > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.pageheading {
+  background-color: #55d6be;
+  color: white;
+  letter-spacing: 0.75rem;
+  font-weight: bolder;
+  text-align: center;
+  z-index: 1;
+  position: sticky;
+  top: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 0.5rem;
+}
+
+.question-answer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.question-answer > span {
+  padding: 3px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fc6471;
+  color: white;
+}
+
+.question-answer > p {
+  text-align: left;
+  display: none;
+}
+
+.questioncard {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px 1rem 15px;
+  max-width: 480px;
+  margin: 0 auto 1rem;
+  box-shadow: 1.5px 1.9px 2.6px rgba(0, 0, 0, 0.076),
+    12px 15px 21px rgba(0, 0, 0, 0.16);
+}
+
+.question-tag-list {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tag-item {
+  display: inline-block;
+  background-color: #acfcd9;
+  color: white;
+  padding: 2px 5px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  border-radius: 3px;
+}
