@@ -6,38 +6,41 @@ body {
   font-family: "Roboto", sans-serif;
   max-width: 640px;
   margin: 0 auto;
+  display: grid;
+  grid-template-rows: 65px auto 48px;
+  height: 100vh;
 }
 
 main {
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #f7f7f7;
-  padding: 1rem 0.5rem 4rem 0.5rem;
+  padding: 1rem 0.5rem;
   color: #0d0d0d;
+  overflow-y: auto;
 }
 
 /*Utilities*/
 
-.m-neg8 {
+.ml-neg8 {
   margin-left: -8px;
 }
 
 /*Components*/
 
 .navigation {
-  z-index: 10;
-  position: fixed;
-  bottom: 0px;
   background-color: #55d6be;
-  width: 100%;
-  max-width: 640px;
   margin: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  display: flex;
+  gap: 5px;
 }
 
-.navigation > ul {
+.navigation ul,
+.navigation li {
+  display: contents;
+}
+
+.icons-navigation {
+  fill: white;
+  width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -45,29 +48,18 @@ main {
   margin: 0;
 }
 
-.navigation > ul > li > a {
-  color: white;
-  text-decoration: none;
+.icons-navigation:hover {
+  fill: #fc6471;
 }
 
-.navigation > ul > li > a:hover {
-  text-decoration: underline;
-}
-
-.pageheading {
+.page-heading {
   background-color: #55d6be;
   color: white;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
   font-weight: bolder;
   text-align: center;
-  z-index: 1;
-  position: sticky;
-  top: 0px;
-  margin-top: 0;
-  margin-bottom: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding-bottom: 0.5rem;
+  width: 100%;
+  height: 100%;
 }
 
 .question-answer {
@@ -83,12 +75,12 @@ main {
   color: white;
 }
 
-.question-answer > p {
+.question-answer-text {
   text-align: left;
   display: none;
 }
 
-.questioncard {
+.question-card {
   background-color: white;
   border-radius: 10px;
   padding: 2px 1rem 15px;
@@ -105,10 +97,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-
-svg {
-  fill: white;
 }
 
 .tag-item {
