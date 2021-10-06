@@ -41,7 +41,6 @@ main {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  flex-wrap: nowrap;
   padding: 15px 0;
   margin: 0;
 }
@@ -106,6 +105,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+svg {
+  fill: white;
 }
 
 .tag-item {
