@@ -9,3 +9,13 @@ function showAnswer() {
     event.target.innerText = "Show answer";
   }
 }
+
+function bookmark() {
+  if (event.target.classList.contains("far")) {
+    event.target.classList.remove("far");
+    event.target.classList.add("fas");
+  } else {
+    event.target.classList.add("far");
+    event.target.classList.remove("fas");
+  }
+}
