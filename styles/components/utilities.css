@@ -9,3 +9,11 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+.mx-auto {
+  margin: auto;
+}
+
+.active {
+  fill: #b82a13;
+}

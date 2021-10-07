@@ -2,7 +2,7 @@
   display: contents;
 }
 
-.navigation__list {
+.navigation-list {
   background-color: #0061bd;
   display: flex;
   list-style: none;
@@ -12,13 +12,13 @@
   padding: 0;
 }
 
-.navigation__list--item {
+.navigation-list__item {
   fill: white;
   display: flex;
   justify-content: space-around;
   padding: 1rem 1.5rem;
 }
 
-.navigation__list--item:hover {
+.navigation-list__item:hover {
   fill: #b82a13;
 }
