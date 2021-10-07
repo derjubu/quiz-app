@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
       rel="stylesheet"
     />
+    <script src="js/functions.js"></script>
   </head>
   <body>
     <h1 class="page-header__title">Quiz App</h1>
@@ -24,8 +25,10 @@
           veniam mollitia magnam?
         </p>
         <div>
-          <span class="card__button">Show answer</span>
-          <p>
+          <span class="card__button show" onclick="showAnswer()"
+            >Show answer</span
+          >
+          <p class="card__answer--hidden">
             This is the answer text. Lorem ipsum dolor, sit amet consectetur
             adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
             est asperiores autem maxime soluta corporis quos earum mollitia
