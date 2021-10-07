@@ -12,13 +12,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/f7d0a0082d.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/functions.js"></script>
   </head>
   <body>
     <h1 class="page-header__title">Quiz App</h1>
     <main>
       <section class="card">
-        <h2 class="card__title">Question</h2>
+        <div class="card__header">
+          <i
+            class="card__bookmark far fa-bookmark fa-3x"
+            onclick="bookmark()"
+          ></i>
+          <h2 class="card__title">Question</h2>
+        </div>
         <p>
           Here goes the question lext. Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci

@@ -4,11 +4,23 @@
   max-width: 480px;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
+  position: relative;
+}
+
+.card__header {
+  display: flex;
 }
 
 .card__title {
   margin-left: -0.75rem;
   font-weight: bolder;
+}
+
+.card__bookmark {
+  position: absolute;
+  right: 2rem;
+  top: -0.2rem;
+  color: #b82a13;
 }
 
 .card__button {
@@ -28,7 +40,6 @@
 .card__button:hover {
   background-color: #b82a13;
   color: white;
-  cursor: pointer;
 }
 
 .card__answer--hidden {
