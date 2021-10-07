@@ -9,16 +9,21 @@
   width: 100%;
   margin: 0;
   justify-content: space-around;
+  align-items: center;
   padding: 0;
 }
 
-.navigation__list--item {
-  fill: white;
+.navigation__item {
+  color: white;
   display: flex;
   justify-content: space-around;
-  padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 
-.navigation__list--item:hover {
-  fill: #b82a13;
+.navigation__item--active {
+  color: #b82a13;
+}
+
+.navigation__item:hover {
+  color: #b82a13;
 }
