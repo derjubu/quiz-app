@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App - Questions</title>
+    <title>Quiz App - Profile</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,41 +22,36 @@
     <h1 class="page-header__title">Quiz App</h1>
     <main>
       <section class="card mx-auto">
-        <div class="card__header">
-          <i
-            class="card__bookmark far fa-bookmark fa-3x"
-            onclick="bookmark()"
-          ></i>
-          <h2 class="card__title">Question</h2>
-        </div>
-        <p>
-          Here goes the question lext. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
-          veniam mollitia magnam?
-        </p>
-        <div>
-          <span class="card__button show" onclick="showAnswer()"
-            >Show answer</span
-          >
-          <p class="card__answer--hidden">
-            This is the answer text. Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
-            est asperiores autem maxime soluta corporis quos earum mollitia
-            libero distinctio voluptas sit odio.
-          </p>
-        </div>
+        <h2 class="card__title">My Profile</h2>
+
+        <img
+          class="profile-photo"
+          src="https://source.unsplash.com/random/200x200?portrait"
+          alt=""
+        />
+        <span class="profile-name">Jan Cux</span>
+        <span>
+          Here goes some information about you. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Est omnis hic quasi iste! Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Est omnis hic quasi iste!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est omnis
+          hic quasi iste!Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Est omnis hic quasi iste! Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Est omnis hic quasi iste!
+        </span>
+        <span class="card__list-title">Your skills:</span>
         <ul class="card__tag-list" role="list">
-          <li class="card__tag-list--item">html</li>
-          <li class="card__tag-list--item">css</li>
-          <li class="card__tag-list--item">javascript</li>
-          <li class="card__tag-list--item">node.js</li>
+          <li class="card__tag-list--item">HTML</li>
+          <li class="card__tag-list--item">JavaScript</li>
+          <li class="card__tag-list--item">CSS</li>
         </ul>
+        <span class="card__button">Log out</span>
       </section>
     </main>
     <nav class="navigation">
       <ul class="navigation-list" role="list">
         <li>
-          <a class="navigation__item--active" href="index.html"
+          <a class="navigation__item" href="index.html"
             ><i class="fas fa-home fa-2x"></i>
 
             <span class="sr-only">Home</span></a
@@ -75,7 +70,7 @@
           >
         </li>
         <li>
-          <a class="navigation__item" href="profile.html"
+          <a class="navigation__item--active" href="profile.html"
             ><i class="fas fa-address-card fa-2x"></i>
             <span class="sr-only">Profile</span></a
           >
