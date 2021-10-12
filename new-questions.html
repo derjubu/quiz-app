@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Profile</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f7d0a0082d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/functions.js"></script>
+  </head>
+  <body>
+    <h1 class="page-header__title">Quiz App</h1>
+    <main>
+      <section class="card mx-auto">
+        <h2 class="card__title">Add new questions</h2>
+        <form class="form">
+          <div class="form__field">
+            <label class="form__label" for="question-text">Question</label>
+            <textarea
+              class="form__textarea"
+              id="question-text"
+              name="question-text"
+              cols="40"
+              rows="4"
+              placeholder="Here goes your question"
+              required
+            ></textarea>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="question-answer">Answer</label>
+            <textarea
+              class="form__textarea"
+              id="question-text"
+              name="question-text"
+              cols="40"
+              rows="4"
+              placeholder="Here goes your answer"
+              required
+            ></textarea>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="tags">Tags</label>
+            <input
+              class="form__tags"
+              type="text"
+              id="tags"
+              placeholder="Seperate your tags by comma"
+            />
+          </div>
+          <div class="form__field">
+            <input
+              class="card__button"
+              type="submit"
+              value="Submit your question"
+            />
+          </div>
+          <!--ADD QUESTION-->
+          <!--ADD ANSWER-->
+          <!--ADD TAGS-->
+          <!--SUBMIT-->
+        </form>
+      </section>
+    </main>
+    <nav class="navigation">
+      <ul class="navigation__list" role="list">
+        <li>
+          <a class="navigation__item" href="index.html"
+            ><i class="fas fa-home fa-2x"></i>
+
+            <span class="sr-only">Home</span></a
+          >
+        </li>
+        <li>
+          <a class="navigation__item" href="bookmarks.html"
+            ><i class="fas fa-bookmark fa-2x"></i>
+            <span class="sr-only">Bookmarks</span></a
+          >
+        </li>
+        <li>
+          <a class="navigation__item" href="new-questions.html"
+            ><i class="fas fa-plus fa-2x"></i>
+            <span class="sr-only">Add new Question</span></a
+          >
+        </li>
+        <li>
+          <a class="navigation__item--active" href="profile.html"
+            ><i class="fas fa-address-card fa-2x"></i>
+            <span class="sr-only">Profile</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
