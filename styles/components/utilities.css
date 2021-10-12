@@ -41,3 +41,7 @@
   padding-right: 5px;
   color: #303030;
 }
+
+.hide {
+  display: none;
+}

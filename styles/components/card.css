@@ -31,6 +31,14 @@
   color: #b82a13;
 }
 
+.card__bookmark--active {
+  background-color: #b82a13;
+}
+
+.card__button-answer::before {
+  content: "Show ";
+}
+
 .card__button {
   background-color: white;
   color: #b82a13;
@@ -48,10 +56,6 @@
 .card__button:hover {
   background-color: #b82a13;
   color: white;
-}
-
-.card__answer--hidden {
-  display: none;
 }
 
 .card__tag-list {
