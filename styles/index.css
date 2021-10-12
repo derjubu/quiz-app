@@ -2,4 +2,6 @@
 @import "components/page-header.css";
 @import "components/navigation-bar.css";
 @import "components/card.css";
+@import "components/form.css";
+@import "components/profile.css";
 @import "components/utilities.css";

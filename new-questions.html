@@ -22,30 +22,53 @@
     <h1 class="page-header__title">Quiz App</h1>
     <main>
       <section class="card mx-auto">
-        <h2 class="card__title">My Profile</h2>
-
-        <img
-          class="profile-photo"
-          src="https://source.unsplash.com/random/200x200?portrait"
-          alt=""
-        />
-        <span class="profile-name">Jan Cux</span>
-        <span>
-          Here goes some information about you. Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Est omnis hic quasi iste! Lorem ipsum,
-          dolor sit amet consectetur adipisicing elit. Est omnis hic quasi iste!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est omnis
-          hic quasi iste!Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Est omnis hic quasi iste! Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Est omnis hic quasi iste!
-        </span>
-        <span class="card__list-title">Your skills:</span>
-        <ul class="card__tag-list" role="list">
-          <li class="card__tag-list--item">HTML</li>
-          <li class="card__tag-list--item">JavaScript</li>
-          <li class="card__tag-list--item">CSS</li>
-        </ul>
-        <span class="card__button">Log out</span>
+        <h2 class="card__title">Add new questions</h2>
+        <form class="form">
+          <div class="form__field">
+            <label class="form__label" for="question-text">Question</label>
+            <textarea
+              class="form__textarea"
+              id="question-text"
+              name="question-text"
+              cols="40"
+              rows="4"
+              placeholder="Here goes your question"
+              required
+            ></textarea>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="question-answer">Answer</label>
+            <textarea
+              class="form__textarea"
+              id="question-text"
+              name="question-text"
+              cols="40"
+              rows="4"
+              placeholder="Here goes your answer"
+              required
+            ></textarea>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="tags">Tags</label>
+            <input
+              class="form__tags"
+              type="text"
+              id="tags"
+              placeholder="Seperate your tags by comma"
+            />
+          </div>
+          <div class="form__field">
+            <input
+              class="card__button"
+              type="submit"
+              value="Submit your question"
+            />
+          </div>
+          <!--ADD QUESTION-->
+          <!--ADD ANSWER-->
+          <!--ADD TAGS-->
+          <!--SUBMIT-->
+        </form>
       </section>
     </main>
     <nav class="navigation">

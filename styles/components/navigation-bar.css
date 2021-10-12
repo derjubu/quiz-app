@@ -2,7 +2,7 @@
   display: contents;
 }
 
-.navigation-list {
+.navigation__list {
   background-color: #0061bd;
   display: flex;
   list-style: none;
