@@ -25,6 +25,8 @@
 }
 
 .card__bookmark {
+  border: 0;
+  background-color: transparent;
   position: absolute;
   right: 2rem;
   top: -0.2rem;
@@ -33,10 +35,6 @@
 
 .card__bookmark--active {
   background-color: #b82a13;
-}
-
-.card__button-answer::before {
-  content: "Show ";
 }
 
 .card__button {

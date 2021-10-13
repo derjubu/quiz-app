@@ -1,6 +1,7 @@
 const bookmark = document.querySelector(".js-bookmark");
 
 bookmark.addEventListener("click", () => {
+  //far is the outlined version of the icon, fas is the solid version.
   bookmark.classList.toggle("far");
   bookmark.classList.toggle("fas");
 });
@@ -9,7 +10,7 @@ const buttonShow = document.querySelector(".js-show");
 const questionAnswer = document.querySelector(".js-card-answer");
 
 buttonShow.addEventListener("click", () => {
-  questionAnswer.classList.toggle("hide");
+  questionAnswer.classList.toggle("hidden");
 });
 
 const buttonQuestions = document.querySelector(".js-nav-question");
@@ -17,16 +18,16 @@ const buttonBookmarks = document.querySelector(".js-nav-bookmarks");
 const buttonNewQuestions = document.querySelector(".js-nav-new-questions");
 const buttonProfile = document.querySelector(".js-nav-profile");
 
-const contentQuestions = document.querySelector(".js-questions");
-const contentBookmarks = document.querySelector(".js-bookmarks");
-const contentNewQuestions = document.querySelector(".js-new-questions");
-const contentProfile = document.querySelector(".js-profile");
+const pageQuestions = document.querySelector(".js-questions");
+const pageBookmarks = document.querySelector(".js-bookmarks");
+const pageNewQuestions = document.querySelector(".js-new-questions");
+const pageProfile = document.querySelector(".js-profile");
 
 buttonQuestions.addEventListener("click", () => {
-  contentQuestions.classList.remove("hide");
-  contentBookmarks.classList.add("hide");
-  contentNewQuestions.classList.add("hide");
-  contentProfile.classList.add("hide");
+  pageQuestions.classList.remove("hidden");
+  pageBookmarks.classList.add("hidden");
+  pageNewQuestions.classList.add("hidden");
+  pageProfile.classList.add("hidden");
   buttonQuestions.classList.add("navigation__item--active");
   buttonBookmarks.classList.remove("navigation__item--active");
   buttonNewQuestions.classList.remove("navigation__item--active");
@@ -34,10 +35,10 @@ buttonQuestions.addEventListener("click", () => {
 });
 
 buttonBookmarks.addEventListener("click", () => {
-  contentQuestions.classList.add("hide");
-  contentBookmarks.classList.remove("hide");
-  contentNewQuestions.classList.add("hide");
-  contentProfile.classList.add("hide");
+  pageQuestions.classList.add("hidden");
+  pageBookmarks.classList.remove("hidden");
+  pageNewQuestions.classList.add("hidden");
+  pageProfile.classList.add("hidden");
   buttonQuestions.classList.remove("navigation__item--active");
   buttonBookmarks.classList.add("navigation__item--active");
   buttonNewQuestions.classList.remove("navigation__item--active");
@@ -45,10 +46,10 @@ buttonBookmarks.addEventListener("click", () => {
 });
 
 buttonNewQuestions.addEventListener("click", () => {
-  contentQuestions.classList.add("hide");
-  contentBookmarks.classList.add("hide");
-  contentNewQuestions.classList.remove("hide");
-  contentProfile.classList.add("hide");
+  pageQuestions.classList.add("hidden");
+  pageBookmarks.classList.add("hidden");
+  pageNewQuestions.classList.remove("hidden");
+  pageProfile.classList.add("hidden");
   buttonQuestions.classList.remove("navigation__item--active");
   buttonBookmarks.classList.remove("navigation__item--active");
   buttonNewQuestions.classList.add("navigation__item--active");
@@ -56,10 +57,10 @@ buttonNewQuestions.addEventListener("click", () => {
 });
 
 buttonProfile.addEventListener("click", () => {
-  contentQuestions.classList.add("hide");
-  contentBookmarks.classList.add("hide");
-  contentNewQuestions.classList.add("hide");
-  contentProfile.classList.remove("hide");
+  pageQuestions.classList.add("hidden");
+  pageBookmarks.classList.add("hidden");
+  pageNewQuestions.classList.add("hidden");
+  pageProfile.classList.remove("hidden");
   buttonQuestions.classList.remove("navigation__item--active");
   buttonBookmarks.classList.remove("navigation__item--active");
   buttonNewQuestions.classList.remove("navigation__item--active");
