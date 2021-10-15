@@ -20,11 +20,14 @@
   </head>
   <body>
     <h1 class="page-header__title">Quiz App</h1>
-    <main class="js-questions">
-      <section class="card mx-auto">
+    <main class="card__area">
+      <section data-js="card" class="card mx-auto">
         <div class="card__header">
           <button class="card__bookmark">
-            <i class="far fa-bookmark fa-3x js-bookmark"></i>
+            <i
+              data-js="bookmark"
+              class="far fa-bookmark fa-3x card_bookmark"
+            ></i>
           </button>
           <h2 class="card__title">Question</h2>
         </div>
@@ -34,10 +37,88 @@
           veniam mollitia magnam?
         </p>
         <div>
-          <button class="card__button js-show card__button-answer">
-            Show answer
+          <button
+            data-js="answerbutton"
+            class="card__button card__button-answer"
+          >
+            <span data-js="answertexthide" class="hidden">Hide</span
+            ><span data-js="answertextshow">Show</span> answer
           </button>
-          <p class="js-card-answer hidden">
+          <p data-js="answer" class="hidden">
+            This is the answer text. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
+            est asperiores autem maxime soluta corporis quos earum mollitia
+            libero distinctio voluptas sit odio.
+          </p>
+        </div>
+        <ul class="card__tag-list" role="list">
+          <li class="card__tag-list--item icon-html">html</li>
+          <li class="card__tag-list--item icon-css">css</li>
+          <li class="card__tag-list--item icon-js">javascript</li>
+          <li class="card__tag-list--item icon-node">node.js</li>
+        </ul>
+      </section>
+      <section data-js="card" class="card mx-auto">
+        <div class="card__header">
+          <button class="card__bookmark">
+            <i
+              data-js="bookmark"
+              class="far fa-bookmark fa-3x card_bookmark"
+            ></i>
+          </button>
+          <h2 class="card__title">Question</h2>
+        </div>
+        <p>
+          Here goes the question lext. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
+          veniam mollitia magnam?
+        </p>
+        <div>
+          <button
+            data-js="answerbutton"
+            class="card__button card__button-answer"
+          >
+            <span data-js="answertexthide" class="hidden">Hide</span
+            ><span data-js="answertextshow">Show</span> answer
+          </button>
+          <p data-js="answer" class="hidden">
+            This is the answer text. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
+            est asperiores autem maxime soluta corporis quos earum mollitia
+            libero distinctio voluptas sit odio.
+          </p>
+        </div>
+        <ul class="card__tag-list" role="list">
+          <li class="card__tag-list--item icon-html">html</li>
+          <li class="card__tag-list--item icon-css">css</li>
+          <li class="card__tag-list--item icon-js">javascript</li>
+          <li class="card__tag-list--item icon-node">node.js</li>
+        </ul>
+      </section>
+      <section data-js="card" class="card mx-auto">
+        <div class="card__header">
+          <button class="card__bookmark">
+            <i
+              data-js="bookmark"
+              class="far fa-bookmark fa-3x card_bookmark"
+            ></i>
+          </button>
+          <h2 class="card__title">Question</h2>
+        </div>
+        <p>
+          Here goes the question lext. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
+          veniam mollitia magnam?
+        </p>
+        <div>
+          <button
+            data-js="answerbutton"
+            class="card__button card__button-answer"
+          >
+            <span data-js="answertexthide" class="hidden">Hide</span
+            ><span data-js="answertextshow">Show</span> answer
+          </button>
+          <p data-js="answer" class="hidden">
             This is the answer text. Lorem ipsum dolor, sit amet consectetur
             adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
             est asperiores autem maxime soluta corporis quos earum mollitia
@@ -56,7 +137,7 @@
       <section class="card mx-auto">
         <div class="card__header">
           <button class="card__bookmark">
-            <i class="fas fa-bookmark fa-3x js-bookmark"></i>
+            <i data-js="bookmark" class="fas fa-bookmark fa-3x"></i>
           </button>
           <h2 class="card__title">Question</h2>
         </div>

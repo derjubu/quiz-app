@@ -18,28 +18,24 @@
   font-family: "FontAwesome";
   content: "\f13b";
   padding-right: 5px;
-  color: #e34c26;
 }
 
 .icon-css::before {
   font-family: "FontAwesome";
   content: "\f13c";
   padding-right: 5px;
-  color: #264de4;
 }
 
 .icon-js::before {
   font-family: "FontAwesome";
   content: "\f3b9";
   padding-right: 5px;
-  color: #f0db4f;
 }
 
 .icon-node::before {
   font-family: "FontAwesome";
   content: "\f3d3";
   padding-right: 5px;
-  color: #303030;
 }
 
 .hidden {
