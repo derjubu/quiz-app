@@ -16,147 +16,226 @@
       src="https://kit.fontawesome.com/f7d0a0082d.js"
       crossorigin="anonymous"
     ></script>
-    <script defer src="scripts/functions.js"></script>
+    <script defer src="scripts/index.js" type="module"></script>
   </head>
   <body>
     <h1 class="page-header__title">Quiz App</h1>
-    <main>
-      <section class="js-questions">
-        <section class="card mx-auto">
-          <div class="card__header">
-            <button class="card__bookmark">
-              <i class="far fa-bookmark fa-3x js-bookmark"></i>
-            </button>
-            <h2 class="card__title">Question</h2>
-          </div>
-          <p>
-            Here goes the question lext. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
-            veniam mollitia magnam?
+    <main class="card__area">
+      <section data-js="card" class="card mx-auto">
+        <div class="card__header">
+          <button class="card__bookmark">
+            <i
+              data-js="bookmark"
+              class="far fa-bookmark fa-3x card_bookmark"
+            ></i>
+          </button>
+          <h2 class="card__title">Question</h2>
+        </div>
+        <p>
+          Here goes the question lext. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
+          veniam mollitia magnam?
+        </p>
+        <div>
+          <button
+            data-js="answerbutton"
+            class="card__button card__button-answer"
+          >
+            <span data-js="answertexthide" class="hidden">Hide</span
+            ><span data-js="answertextshow">Show</span> answer
+          </button>
+          <p data-js="answer" class="hidden">
+            This is the answer text. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
+            est asperiores autem maxime soluta corporis quos earum mollitia
+            libero distinctio voluptas sit odio.
           </p>
-          <div>
-            <button class="card__button js-show card__button-answer">
-              Show answer
-            </button>
-            <p class="js-card-answer hidden">
-              This is the answer text. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Quo ipsum magni a perspiciatis nulla rem,
-              corrupti est asperiores autem maxime soluta corporis quos earum
-              mollitia libero distinctio voluptas sit odio.
-            </p>
-          </div>
-          <ul class="card__tag-list" role="list">
-            <li class="card__tag-list--item icon-html">html</li>
-            <li class="card__tag-list--item icon-css">css</li>
-            <li class="card__tag-list--item icon-js">javascript</li>
-            <li class="card__tag-list--item icon-node">node.js</li>
-          </ul>
-        </section>
+        </div>
+        <ul class="card__tag-list" role="list">
+          <li class="card__tag-list--item icon-html">html</li>
+          <li class="card__tag-list--item icon-css">css</li>
+          <li class="card__tag-list--item icon-js">javascript</li>
+          <li class="card__tag-list--item icon-node">node.js</li>
+        </ul>
       </section>
-      <section class="js-bookmarks hidden">
-        <section class="card mx-auto">
-          <div class="card__header">
-            <button class="card__bookmark">
-              <i class="fas fa-bookmark fa-3x js-bookmark"></i>
-            </button>
-            <h2 class="card__title">Question</h2>
-          </div>
-          <p>
-            Here goes the question lext. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
-            veniam mollitia magnam?
+      <section data-js="card" class="card mx-auto">
+        <div class="card__header">
+          <button class="card__bookmark">
+            <i
+              data-js="bookmark"
+              class="far fa-bookmark fa-3x card_bookmark"
+            ></i>
+          </button>
+          <h2 class="card__title">Question</h2>
+        </div>
+        <p>
+          Here goes the question lext. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
+          veniam mollitia magnam?
+        </p>
+        <div>
+          <button
+            data-js="answerbutton"
+            class="card__button card__button-answer"
+          >
+            <span data-js="answertexthide" class="hidden">Hide</span
+            ><span data-js="answertextshow">Show</span> answer
+          </button>
+          <p data-js="answer" class="hidden">
+            This is the answer text. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
+            est asperiores autem maxime soluta corporis quos earum mollitia
+            libero distinctio voluptas sit odio.
           </p>
-          <div>
-            <button class="card__button js-show">Show answer</button>
-            <p class="js-card-answer hidden">
-              This is the answer text. Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Quo ipsum magni a perspiciatis nulla rem,
-              corrupti est asperiores autem maxime soluta corporis quos earum
-              mollitia libero distinctio voluptas sit odio.
-            </p>
+        </div>
+        <ul class="card__tag-list" role="list">
+          <li class="card__tag-list--item icon-html">html</li>
+          <li class="card__tag-list--item icon-css">css</li>
+          <li class="card__tag-list--item icon-js">javascript</li>
+          <li class="card__tag-list--item icon-node">node.js</li>
+        </ul>
+      </section>
+      <section data-js="card" class="card mx-auto">
+        <div class="card__header">
+          <button class="card__bookmark">
+            <i
+              data-js="bookmark"
+              class="far fa-bookmark fa-3x card_bookmark"
+            ></i>
+          </button>
+          <h2 class="card__title">Question</h2>
+        </div>
+        <p>
+          Here goes the question lext. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
+          veniam mollitia magnam?
+        </p>
+        <div>
+          <button
+            data-js="answerbutton"
+            class="card__button card__button-answer"
+          >
+            <span data-js="answertexthide" class="hidden">Hide</span
+            ><span data-js="answertextshow">Show</span> answer
+          </button>
+          <p data-js="answer" class="hidden">
+            This is the answer text. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
+            est asperiores autem maxime soluta corporis quos earum mollitia
+            libero distinctio voluptas sit odio.
+          </p>
+        </div>
+        <ul class="card__tag-list" role="list">
+          <li class="card__tag-list--item icon-html">html</li>
+          <li class="card__tag-list--item icon-css">css</li>
+          <li class="card__tag-list--item icon-js">javascript</li>
+          <li class="card__tag-list--item icon-node">node.js</li>
+        </ul>
+      </section>
+    </main>
+    <main class="js-bookmarks hidden">
+      <section class="card mx-auto">
+        <div class="card__header">
+          <button class="card__bookmark">
+            <i data-js="bookmark" class="fas fa-bookmark fa-3x"></i>
+          </button>
+          <h2 class="card__title">Question</h2>
+        </div>
+        <p>
+          Here goes the question lext. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Laborum et autem sequi. Sit quia nihil adipisci
+          veniam mollitia magnam?
+        </p>
+        <div>
+          <button class="card__button js-show">Show answer</button>
+          <p class="js-card-answer hidden">
+            This is the answer text. Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quo ipsum magni a perspiciatis nulla rem, corrupti
+            est asperiores autem maxime soluta corporis quos earum mollitia
+            libero distinctio voluptas sit odio.
+          </p>
+        </div>
+        <ul class="card__tag-list" role="list">
+          <li class="card__tag-list--item icon-html">html</li>
+          <li class="card__tag-list--item icon-css">css</li>
+          <li class="card__tag-list--item icon-js">javascript</li>
+          <li class="card__tag-list--item icon-node">node.js</li>
+        </ul>
+      </section>
+    </main>
+    <main class="js-new-questions hidden">
+      <section class="card mx-auto">
+        <h2 class="card__title">Add new questions</h2>
+        <form class="form">
+          <div class="form__field">
+            <label class="form__label" for="question-text">Question</label>
+            <textarea
+              class="form__textarea"
+              id="question-text"
+              name="question-text"
+              cols="40"
+              rows="4"
+              placeholder="Here goes your question"
+              required
+            ></textarea>
           </div>
-          <ul class="card__tag-list" role="list">
-            <li class="card__tag-list--item icon-html">html</li>
-            <li class="card__tag-list--item icon-css">css</li>
-            <li class="card__tag-list--item icon-js">javascript</li>
-            <li class="card__tag-list--item icon-node">node.js</li>
-          </ul>
-        </section>
+          <div class="form__field">
+            <label class="form__label" for="question-answer">Answer</label>
+            <textarea
+              class="form__textarea"
+              id="answer-text"
+              name="answer-text"
+              cols="40"
+              rows="4"
+              placeholder="Here goes your answer"
+              required
+            ></textarea>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="tags">Tags</label>
+            <input
+              class="form__tags"
+              type="text"
+              id="tags"
+              placeholder="Seperate your tags by comma"
+            />
+          </div>
+          <div class="form__field">
+            <input
+              class="card__button"
+              type="submit"
+              value="Submit your question"
+            />
+          </div>
+        </form>
       </section>
-      <section class="js-new-questions hidden">
-        <section class="card mx-auto">
-          <h2 class="card__title">Add new questions</h2>
-          <form class="form">
-            <div class="form__field">
-              <label class="form__label" for="question-text">Question</label>
-              <textarea
-                class="form__textarea"
-                id="question-text"
-                name="question-text"
-                cols="40"
-                rows="4"
-                placeholder="Here goes your question"
-                required
-              ></textarea>
-            </div>
-            <div class="form__field">
-              <label class="form__label" for="question-answer">Answer</label>
-              <textarea
-                class="form__textarea"
-                id="answer-text"
-                name="answer-text"
-                cols="40"
-                rows="4"
-                placeholder="Here goes your answer"
-                required
-              ></textarea>
-            </div>
-            <div class="form__field">
-              <label class="form__label" for="tags">Tags</label>
-              <input
-                class="form__tags"
-                type="text"
-                id="tags"
-                placeholder="Seperate your tags by comma"
-              />
-            </div>
-            <div class="form__field">
-              <input
-                class="card__button"
-                type="submit"
-                value="Submit your question"
-              />
-            </div>
-          </form>
-        </section>
-      </section>
-      <section class="js-profile hidden">
-        <section class="card mx-auto">
-          <h2 class="card__title">My Profile</h2>
+    </main>
+    <main class="js-profile hidden">
+      <section class="card mx-auto">
+        <h2 class="card__title">My Profile</h2>
 
-          <img
-            class="profile-photo"
-            src="https://source.unsplash.com/random/200x200?portrait"
-            alt=""
-          />
-          <span class="profile-name">Jan Cux</span>
-          <span>
-            Here goes some information about you. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Est omnis hic quasi iste! Lorem ipsum,
-            dolor sit amet consectetur adipisicing elit. Est omnis hic quasi
-            iste! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
-            omnis hic quasi iste!Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Est omnis hic quasi iste! Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Est omnis hic quasi iste!
-          </span>
-          <span class="card__list-title">Your skills:</span>
-          <ul class="card__tag-list" role="list">
-            <li class="card__tag-list--item">HTML</li>
-            <li class="card__tag-list--item">JavaScript</li>
-            <li class="card__tag-list--item">CSS</li>
-          </ul>
-          <span class="card__button">Log out</span>
-        </section>
+        <img
+          class="profile-photo"
+          src="https://source.unsplash.com/random/200x200?portrait"
+          alt=""
+        />
+        <span class="profile-name">Jan Cux</span>
+        <span>
+          Here goes some information about you. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Est omnis hic quasi iste! Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Est omnis hic quasi iste!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est omnis
+          hic quasi iste!Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Est omnis hic quasi iste! Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Est omnis hic quasi iste!
+        </span>
+        <span class="card__list-title">Your skills:</span>
+        <ul class="card__tag-list" role="list">
+          <li class="card__tag-list--item">HTML</li>
+          <li class="card__tag-list--item">JavaScript</li>
+          <li class="card__tag-list--item">CSS</li>
+        </ul>
+        <span class="card__button">Log out</span>
       </section>
     </main>
     <nav class="navigation">

@@ -16,4 +16,10 @@ main {
   background: #ececec;
   overflow-y: auto;
   padding-top: 1rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
 }
