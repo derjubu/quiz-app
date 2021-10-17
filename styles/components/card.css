@@ -22,7 +22,7 @@
 
 .card__title::after {
   background-color: #b82a13;
-  content: "";
+  content: '';
   display: block;
   height: 5px;
   position: relative;
@@ -70,7 +70,12 @@
 }
 
 .card__tag-list--item {
-  background-color: #00753c;
+  background: linear-gradient(
+    356deg,
+    rgba(187, 255, 0, 1) 0%,
+    rgba(5, 161, 42, 1) 27%,
+    rgba(0, 117, 60, 1) 74%
+  );
   padding: 0.25rem 0.5rem;
   border-radius: 1rem;
   color: white;
