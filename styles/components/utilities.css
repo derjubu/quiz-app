@@ -14,27 +14,34 @@
   margin: auto;
 }
 
+.small {
+  font-size: 0.75rem;
+  color: gray;
+  border: none;
+  padding: none;
+}
+
 .icon-html::before {
-  font-family: "FontAwesome";
-  content: "\f13b";
+  font-family: 'FontAwesome';
+  content: '\f13b';
   padding-right: 5px;
 }
 
 .icon-css::before {
-  font-family: "FontAwesome";
-  content: "\f13c";
+  font-family: 'FontAwesome';
+  content: '\f13c';
   padding-right: 5px;
 }
 
 .icon-js::before {
-  font-family: "FontAwesome";
-  content: "\f3b9";
+  font-family: 'FontAwesome';
+  content: '\f3b9';
   padding-right: 5px;
 }
 
 .icon-node::before {
-  font-family: "FontAwesome";
-  content: "\f3d3";
+  font-family: 'FontAwesome';
+  content: '\f3d3';
   padding-right: 5px;
 }
 
