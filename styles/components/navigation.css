@@ -3,7 +3,7 @@
 }
 
 .navigation__list {
-  background-color: #0061bd;
+  background: rgba(0, 97, 189, 1);
   display: flex;
   list-style: none;
   width: 100%;
