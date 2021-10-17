@@ -1,3 +1,53 @@
+import { getElement } from "./utilities.js"
+
+const navProfile = getElement("nav-profile")
+const navNewQuestion = getElement("nav-new-question")
+const navBookmarks = getElement("nav-bookmarks")
+const navQuestions = getElement("nav-question")
+const profile = getElement("profile")
+const questions = getElement("cardarea")
+const bookmarks = getElement("bookmarks")
+const newQuestions = getElement("newquestions")
+
 export function navigation() {
-  console.log("Navigation");
+  navProfile.addEventListener("click", () => {
+    navProfile.classList.add("navigation__item--active")
+    navNewQuestion.classList.remove("navigation__item--active")
+    navBookmarks.classList.remove("navigation__item--active")
+    navQuestions.classList.remove("navigation__item--active")
+    profile.classList.remove("hidden")
+    questions.classList.add("hidden")
+    bookmarks.classList.add("hidden")
+    newQuestions.classList.add("hidden")
+  })
+  navNewQuestion.addEventListener("click", () => {
+    navProfile.classList.remove("navigation__item--active")
+    navNewQuestion.classList.add("navigation__item--active")
+    navBookmarks.classList.remove("navigation__item--active")
+    navQuestions.classList.remove("navigation__item--active")
+    profile.classList.add("hidden")
+    questions.classList.add("hidden")
+    bookmarks.classList.add("hidden")
+    newQuestions.classList.remove("hidden")
+  })
+  navBookmarks.addEventListener("click", () => {
+    navProfile.classList.remove("navigation__item--active")
+    navNewQuestion.classList.remove("navigation__item--active")
+    navBookmarks.classList.add("navigation__item--active")
+    navQuestions.classList.remove("navigation__item--active")
+    profile.classList.add("hidden")
+    questions.classList.add("hidden")
+    bookmarks.classList.remove("hidden")
+    newQuestions.classList.add("hidden")
+  })
+  navQuestions.addEventListener("click", () => {
+    navProfile.classList.remove("navigation__item--active")
+    navNewQuestion.classList.remove("navigation__item--active")
+    navBookmarks.classList.remove("navigation__item--active")
+    navQuestions.classList.add("navigation__item--active")
+    profile.classList.add("hidden")
+    questions.classList.remove("hidden")
+    bookmarks.classList.add("hidden")
+    newQuestions.classList.add("hidden")
+  })
 }

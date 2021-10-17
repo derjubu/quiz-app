@@ -20,10 +20,10 @@
   </head>
   <body>
     <h1 class="page-header__title">Quiz App</h1>
-    <main class="card__area">
+    <main data-js="cardarea" class="card__area">
       <section data-js="card" class="card mx-auto">
         <div class="card__header">
-          <button class="card__bookmark">
+          <button class="card__bookmark" aria-label="Bookmark question">
             <i
               data-js="bookmark"
               class="far fa-bookmark fa-3x card_bookmark"
@@ -60,7 +60,7 @@
       </section>
       <section data-js="card" class="card mx-auto">
         <div class="card__header">
-          <button class="card__bookmark">
+          <button class="card__bookmark" aria-label="Bookmark question">
             <i
               data-js="bookmark"
               class="far fa-bookmark fa-3x card_bookmark"
@@ -97,7 +97,7 @@
       </section>
       <section data-js="card" class="card mx-auto">
         <div class="card__header">
-          <button class="card__bookmark">
+          <button class="card__bookmark" aria-label="Bookmark question">
             <i
               data-js="bookmark"
               class="far fa-bookmark fa-3x card_bookmark"
@@ -133,10 +133,10 @@
         </ul>
       </section>
     </main>
-    <main class="js-bookmarks hidden">
+    <main data-js="bookmarks" class="hidden">
       <section class="card mx-auto">
         <div class="card__header">
-          <button class="card__bookmark">
+          <button class="card__bookmark" aria-label="Bookmark question">
             <i data-js="bookmark" class="fas fa-bookmark fa-3x"></i>
           </button>
           <h2 class="card__title">Question</h2>
@@ -163,7 +163,7 @@
         </ul>
       </section>
     </main>
-    <main class="js-new-questions hidden">
+    <main data-js="newquestions" class="hidden">
       <section class="card mx-auto">
         <h2 class="card__title">Add new questions</h2>
         <form class="form">
@@ -210,7 +210,7 @@
         </form>
       </section>
     </main>
-    <main class="js-profile hidden">
+    <main data-js="profile" class="hidden">
       <section class="card mx-auto">
         <h2 class="card__title">My Profile</h2>
 
@@ -242,30 +242,29 @@
       <ul class="navigation__list" role="list">
         <li>
           <i
-            class="
-              js-nav-question
-              navigation__item navigation__item--active
-              fas
-              fa-home fa-2x
-            "
+            data-js="nav-question"
+            class="navigation__item navigation__item--active fas fa-home fa-2x"
           ></i>
           <span class="sr-only">Home</span>
         </li>
         <li>
           <i
-            class="js-nav-bookmarks navigation__item fas fa-bookmark fa-2x"
+            data-js="nav-bookmarks"
+            class="navigation__item fas fa-bookmark fa-2x"
           ></i>
           <span class="sr-only">Bookmarks</span>
         </li>
         <li>
           <i
-            class="js-nav-new-questions navigation__item fas fa-plus fa-2x"
+            data-js="nav-new-question"
+            class="navigation__item fas fa-plus fa-2x"
           ></i>
           <span class="sr-only">Add new Question</span>
         </li>
         <li>
           <i
-            class="js-nav-profile navigation__item fas fa-address-card fa-2x"
+            data-js="nav-profile"
+            class="navigation__item fas fa-address-card fa-2x"
           ></i>
           <span class="sr-only">Profile</span>
         </li>
