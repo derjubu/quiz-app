@@ -170,6 +170,7 @@
           <div class="form__field">
             <label class="form__label" for="question-text">Question</label>
             <textarea
+              data-js="questionText"
               class="form__textarea"
               id="question-text"
               name="question-text"
@@ -178,6 +179,11 @@
               placeholder="Here goes your question"
               required
             ></textarea>
+            <span data-js="questionWordText" class="small"
+              >You need to enter
+              <span data-js="questionWordCount" class="small"></span> more
+              words</span
+            >
           </div>
           <div class="form__field">
             <label class="form__label" for="question-answer">Answer</label>
@@ -193,11 +199,12 @@
           </div>
           <div class="form__field">
             <label class="form__label" for="tags">Tags</label>
+            <span class="small">Please seperate your tags by comma</span>
             <input
               class="form__tags"
               type="text"
               id="tags"
-              placeholder="Seperate your tags by comma"
+              placeholder="Which areas does your question cover?"
             />
           </div>
           <div class="form__field">
